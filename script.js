@@ -1,7 +1,7 @@
 L.mapbox.accessToken = 'pk.eyJ1IjoiYm9zc2Jvc3NsZXUiLCJhIjoiY2trcHU5N2EyMGJwdDJvbnRvc2g2djNubSJ9.MH9jCElgj_r1kHN305ijZw';
 var info = document.getElementById('info');
 var map = L.mapbox.map('map')
-    .setView([40.738, -73.950], 11.2)
+    .setView([40.745, -73.935], 11.2)
     .setMaxZoom(11.9)
     .setMinZoom(11.2)
     .addLayer(L.mapbox.styleLayer('mapbox://styles/bossbossleu/ckorhgspj0p7q17rvd5hx3epj')
