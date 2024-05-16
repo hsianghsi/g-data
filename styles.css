@@ -1,0 +1,176 @@
+body,
+#map {
+    position: absolute;
+    Height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.leaflet-marker-pane {
+    opacity: 0%;
+}
+
+.leaflet-control-container {
+    opacity: 0%;
+}
+
+.leaflet-popup {
+    display: none;
+}
+
+.leaflet-marker-icon {
+    width: 30px !important;
+    height: 18px !important;
+    margin-left: 0px !important;
+    margin-top: 0px !important;
+    left: -15px;
+    top: -9px;
+}
+
+.info {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.info div {
+    background: transparent;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 9px;
+    line-height: 11px;
+    padding: 10px;
+    border-radius: 0px;
+    width: flex;
+    height: flex;
+}
+
+.flexbox {
+    position: fixed;
+    top: -296px;
+    left: 270px;
+}
+
+.marker {
+    text-align: center;
+    text-shadow: 0 0 4px white;
+}
+
+.closebtn {
+    font-size: 21px;
+    font-weight: 400;
+    padding: 0 5px;
+    cursor: pointer;
+}
+
+.closebtn:hover {
+    color: rgb(90, 90, 90);
+}
+
+.flexbox {
+    display: flex;
+    padding: 0px !important;
+}
+
+.left {
+    padding: 0 2.5px !important;
+    float: left;
+    width: 75px;
+}
+
+.middle {
+    padding: 0 2.5px !important;
+    float: left;
+    width: 100px;
+}
+
+.right {
+    padding: 0 2.5px !important;
+    float: left;
+    width: 40px;
+}
+
+.left h3,
+.left p {
+    margin: 0px;
+}
+
+.middle p,
+.right p {
+    margin: 2.5px !important;
+}
+
+@media only screen and (max-width: 1024px) {
+    .flexbox {
+        top: -280px !important;
+        left: 90px !important;
+    }
+}
+
+@media only screen and (max-width: 414px) {
+    .flexbox {
+        top: -265px !important;
+        left: -67.5px !important;
+    }
+
+    .flexbox::-webkit-scrollbar {
+        width: 3px;
+        background-color: #f1f1f1;
+    }
+
+    .flexbox::-webkit-scrollbar-thumb {
+        background: #bfbfbf;
+    }
+
+    .middle,
+    .right {
+        background-color: white !important;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+
+    .flexbox {
+        overflow: auto !important;
+        top: -175px !important;
+        left: 21px !important;
+        height: 420px;
+        width: 140px !important;
+    }
+
+    .closebtn {
+        width: 10px !important;
+        position: fixed;
+        top: -210px;
+        left: 16px;
+    }
+
+    .left {
+        text-align: right;
+        position: fixed;
+        top: -209px;
+        left: 35px;
+    }
+
+    .middle {
+        width: 97px !important;
+        height: 610px;
+        position: relative;
+        left: 0px;
+    }
+
+    .right {
+        width: 33px !important;
+        height: 610px;
+        position: relative;
+        left: 0px;
+    }
+
+    .middle,
+    .right {
+        font-size: 9px !important;
+    }
+
+}
